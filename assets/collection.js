@@ -2,7 +2,7 @@
   const config = window.WEDDING;
   if (!config) return;
   const initials = `${Array.from(config.bride)[0] || ''} & ${Array.from(config.groom)[0] || ''}`;
-  for (const key of ['garden', 'editorial', 'theatre']) {
+  for (const key of ['garden', 'editorial', 'theatre', 'paper']) {
     const card = document.querySelector(`.item-${key}`);
     const design = config.themes[key];
     if (!card || !design) continue;
